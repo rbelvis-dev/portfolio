@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rex Belvis | Personal Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#0b1120] text-slate-100 antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 w-full bg-[#0b1120]/80 backdrop-blur-md z-50 border-b border-slate-800/50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-black tracking-wider text-white hover:opacity-80 transition-opacity">
+                REX<span class="text-blue-500">.DEV</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+                <a href="#inspiration" class="hover:text-blue-400 transition-colors">Inspiration</a>
+                <a href="#hobbies" class="hover:text-blue-400 transition-colors">Hobbies</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/rbelvis-dev" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center justify-center p-2.5 text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 rounded-full transition-all border border-slate-700">
+                    <i class="fa-brands fa-github text-lg"></i>
+                </a>
+                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20 active:scale-95">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / About Section -->
+    <section id="about" class="pt-36 pb-24 md:pt-44 md:pb-32 relative overflow-hidden">
+        <!-- Background Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+        <div class="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+        
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+                <!-- Profile Picture Container -->
+                <div class="relative group flex-shrink-0">
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-1000 group-hover:duration-300"></div>
+                    <div class="relative w-60 h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#161e31] bg-[#161e31] shadow-2xl">
+                        <!-- REPLACE "profile.jpg" WITH YOUR ACTUAL IMAGE FILE -->
+                        <img src="profile.jpg" alt="Rex Belvis" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="absolute -bottom-2 -right-2 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-lg border-4 border-[#0b1120] animate-bounce">
+                        👋
+                    </div>
+                </div>
+
+                <!-- Hero Content -->
+                <div class="flex-1 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold tracking-wide uppercase mb-5">
+                        <span class="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse"></span>
+                        3rd Year BSCS Student @ ICCBI
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight">
+                        Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-blue-400">Rex Belvis</span>
+                    </h1>
+                    <p class="mt-6 text-xl text-slate-300 max-w-2xl leading-relaxed mx-auto md:mx-0">
+                        A passionate 3rd-year Bachelor of Science in Computer Science student at ICCBI. I specialize in web development, creative editing, presentation design, and technical writing.
+                    </p>
+
+                    <!-- Location Tag -->
+                    <div class="mt-4 flex items-center justify-center md:justify-start text-base text-slate-400 gap-2.5 hover:text-white transition-colors">
+                        <i class="fa-solid fa-location-dot text-blue-500"></i>
+                        <span>Brgy. Caloocan, Balayan, Batangas</span>
+                    </div>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="mt-10 flex flex-wrap gap-5 justify-center md:justify-start">
+                        <a href="#skills" class="px-8 py-4 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/30 active:scale-95">
+                            My Skills
+                        </a>
+                        <a href="https://github.com/rbelvis-dev" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-xl bg-[#161e31] text-slate-200 font-semibold border border-slate-700 hover:bg-slate-700/50 hover:border-slate-600 transition-all active:scale-95 flex items-center gap-2.5">
+                            <i class="fa-brands fa-github text-xl"></i>
+                            GitHub Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-[#0a0f1c] border-y border-slate-800/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold tracking-wide uppercase mb-3">
+                    Capabilities
+                </div>
+                <h2 class="text-4xl font-extrabold text-white tracking-tight">Skills & Expertise</h2>
+                <p class="text-slate-400 mt-3 text-lg">Combination of technical background, design creativity, and academic abilities.</p>
+                <div class="w-16 h-1 bg-blue-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill 1: Canva & PPT -->
+                <div class="bg-[#111827] border border-slate-700/50 p-8 rounded-2xl hover:border-blue-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-teal-500/10 text-teal-400 rounded-xl flex items-center justify-center text-2xl mb-6 border border-teal-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-file-powerpoint"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Presentation & Canva Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Expert in designing engaging PowerPoint presentations and visual graphics using Canva for academic and professional needs.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 text-teal-300 rounded-md text-xs font-medium">Canva</span>
+                        <span class="px-3 py-1 bg-slate-800 text-teal-300 rounded-md text-xs font-medium">PowerPoint</span>
+                        <span class="px-3 py-1 bg-slate-800 text-teal-300 rounded-md text-xs font-medium">Visual Design</span>
+                    </div>
+                </div>
+
+                <!-- Skill 2: Video & Photo Editing -->
+                <div class="bg-[#111827] border border-slate-700/50 p-8 rounded-2xl hover:border-blue-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-indigo-500/10 text-indigo-400 rounded-xl flex items-center justify-center text-2xl mb-6 border border-indigo-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Photo & Video Editing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Creative editing skills for multimedia projects, transforming raw media into polished visual assets and videos.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 text-indigo-300 rounded-md text-xs font-medium">Photo Editing</span>
+                        <span class="px-3 py-1 bg-slate-800 text-indigo-300 rounded-md text-xs font-medium">Video Editing</span>
+                        <span class="px-3 py-1 bg-slate-800 text-indigo-300 rounded-md text-xs font-medium">Multimedia</span>
+                    </div>
+                </div>
+
+                <!-- Skill 3: Essay & Writing -->
+                <div class="bg-[#111827] border border-slate-700/50 p-8 rounded-2xl hover:border-blue-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center text-2xl mb-6 border border-amber-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Essay & Content Writing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Strong writing skills focused on structuring essays, research material, academic outputs, and technical documentation.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 text-amber-300 rounded-md text-xs font-medium">Essay Writing</span>
+                        <span class="px-3 py-1 bg-slate-800 text-amber-300 rounded-md text-xs font-medium">Research</span>
+                        <span class="px-3 py-1 bg-slate-800 text-amber-300 rounded-md text-xs font-medium">Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspiration Section -->
+    <section id="inspiration" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold tracking-wide uppercase mb-3">
+                    Inspiration
+                </div>
+                <h2 class="text-4xl font-extrabold text-white tracking-tight">Driven By Love & Sacrifice</h2>
+                <p class="text-slate-400 mt-3 text-lg">The core foundation of my journey and dedication to my studies at ICCBI.</p>
+                <div class="w-16 h-1 bg-blue-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 items-stretch">
+                <!-- Mom Card -->
+                <div class="bg-[#111827] border border-slate-700/50 p-10 rounded-2xl relative overflow-hidden group hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-blue-500/5 rounded-full blur-3xl group-hover:bg-blue-500/10 transition-all"></div>
+                    <div class="w-14 h-14 bg-blue-500/10 text-blue-400 rounded-2xl flex items-center justify-center text-2xl mb-8 border border-blue-500/20">
+                        <i class="fa-solid fa-plane-departure"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">My Mom Abroad</h3>
+                    <p class="text-slate-300 leading-relaxed text-lg">
+                        Working far away from home, my mother's hard work overseas serves as my daily reminder to never give up. Every line of code I write and every lesson I master is dedicated to honoring her sacrifices.
+                    </p>
+                </div>
+
+                <!-- Extended Family Card -->
+                <div class="bg-[#111827] border border-slate-700/50 p-10 rounded-2xl relative overflow-hidden group hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-indigo-500/5 rounded-full blur-3xl group-hover:bg-indigo-500/10 transition-all"></div>
+                    <div class="w-14 h-14 bg-indigo-500/10 text-indigo-400 rounded-2xl flex items-center justify-center text-2xl mb-8 border border-indigo-500/20">
+                        <i class="fa-solid fa-people-roof"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">My Family's Guidance</h3>
+                    <p class="text-slate-300 leading-relaxed text-lg">
+                        Even though I can be a playful and mischievous grandchild and cousin at times, my <strong>Aunts, Uncles, Grandfather, and Grandmother</strong> are always there to guide and support me. Their constant patience and unwavering trust give me the strength to work hard and succeed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="py-24 bg-[#0a0f1c] border-t border-slate-800/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold tracking-wide uppercase mb-3">
+                    Hobbies
+                </div>
+                <h2 class="text-4xl font-extrabold text-white tracking-tight">Passions & Free Time</h2>
+                <p class="text-slate-400 mt-3 text-lg">What keeps me engaged, focused, and energized.</p>
+                <div class="w-16 h-1 bg-blue-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Hobby 1: Coding -->
+                <div class="bg-[#111827]/60 border border-slate-700/50 p-10 rounded-2xl hover:bg-[#111827] transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-2 hover:border-blue-500/50">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-600/10 text-blue-400 rounded-2xl flex items-center justify-center text-3xl mb-8 border border-blue-500/20">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Coding & Web Development</h3>
+                        <p class="text-slate-300 leading-relaxed text-lg mb-8">
+                            As a 3rd Year BSCS student at ICCBI, I enjoy creating responsive websites and exploring software technologies. Check out my repositories on GitHub!
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <a href="https://github.com/rbelvis-dev" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-semibold text-sm transition-colors">
+                            <i class="fa-brands fa-github"></i> Visit github.com/rbelvis-dev &rarr;
+                        </a>
+                        <div class="flex flex-wrap gap-2.5 pt-4 border-t border-slate-700/50">
+                            <span class="px-4 py-1.5 bg-slate-700/40 text-slate-200 rounded-full text-sm font-semibold">HTML/CSS</span>
+                            <span class="px-4 py-1.5 bg-slate-700/40 text-slate-200 rounded-full text-sm font-semibold">Tailwind CSS</span>
+                            <span class="px-4 py-1.5 bg-slate-700/40 text-slate-200 rounded-full text-sm font-semibold">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobby 2: Mobile Legends -->
+                <div class="bg-[#111827]/60 border border-slate-700/50 p-10 rounded-2xl hover:bg-[#111827] transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-2 hover:border-purple-500/50">
+                    <div>
+                        <div class="w-16 h-16 bg-purple-600/10 text-purple-400 rounded-2xl flex items-center justify-center text-3xl mb-8 border border-purple-500/20">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Mobile Legends (MLBB)</h3>
+                        <p class="text-slate-300 leading-relaxed text-lg mb-8">
+                            Beyond entertainment, playing MLBB sharpens my tactical thinking, quick decision-making under pressure, and effective communication through competitive teamwork.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2.5 pt-4 border-t border-slate-700/50">
+                        <span class="px-4 py-1.5 bg-slate-700/40 text-slate-200 rounded-full text-sm font-semibold">Strategy</span>
+                        <span class="px-4 py-1.5 bg-slate-700/40 text-slate-200 rounded-full text-sm font-semibold">Teamwork</span>
+                        <span class="px-4 py-1.5 bg-slate-700/40 text-slate-200 rounded-full text-sm font-semibold">Gaming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 border-t border-slate-800/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold tracking-wide uppercase mb-3">
+                    Contact
+                </div>
+                <h2 class="text-4xl font-extrabold text-white tracking-tight">Get In Touch</h2>
+                <p class="text-slate-400 mt-3 text-lg">Feel free to reach out for collaborations, presentation assistance, or projects!</p>
+                <div class="w-16 h-1 bg-blue-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12">
+                <!-- Contact Information -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-[#111827] border border-slate-700/50 p-6 rounded-2xl flex items-start gap-5 hover:border-blue-500/50 transition-colors group">
+                        <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-medium text-slate-400 uppercase tracking-wide">Email Address</h4>
+                            <a href="mailto:rexmansalapuz@gmail.com" class="text-base font-semibold text-white hover:text-blue-400 transition-colors break-all">
+                                rexmansalapuz@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#111827] border border-slate-700/50 p-6 rounded-2xl flex items-start gap-5 hover:border-blue-500/50 transition-colors group">
+                        <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-medium text-slate-400 uppercase tracking-wide">GitHub Profile</h4>
+                            <a href="https://github.com/rbelvis-dev" target="_blank" rel="noopener noreferrer" class="text-base font-semibold text-white hover:text-blue-400 transition-colors">
+                                github.com/rbelvis-dev
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#111827] border border-slate-700/50 p-6 rounded-2xl flex items-start gap-5 hover:border-blue-500/50 transition-colors group">
+                        <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-medium text-slate-400 uppercase tracking-wide">Education</h4>
+                            <p class="text-base font-semibold text-white">
+                                3rd Year BSCS - ICCBI
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#111827] border border-slate-700/50 p-6 rounded-2xl flex items-start gap-5 hover:border-blue-500/50 transition-colors group">
+                        <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-medium text-slate-400 uppercase tracking-wide">Location</h4>
+                            <p class="text-base font-semibold text-white">
+                                Brgy. Caloocan, Balayan, Batangas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7 bg-[#111827] border border-slate-700/50 p-8 sm:p-10 rounded-2xl">
+                    <form action="mailto:rexmansalapuz@gmail.com" method="post" enctype="text/plain" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" required class="w-full bg-[#0b1120] border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Rex Belvis">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" required class="w-full bg-[#0b1120] border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors" placeholder="rexmansalapuz@example.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-300 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full bg-[#0b1120] border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-all shadow-lg shadow-blue-600/30 active:scale-95">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-[#0a0f1c] border-t border-slate-800/50 text-center text-slate-500 text-sm">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; Rex Belvis | BSCS Student at ICCBI. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="https://github.com/rbelvis-dev" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300 transition-colors">
+                    <i class="fa-brands fa-github text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
